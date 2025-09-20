@@ -1,0 +1,178 @@
+/* ================================
+   Blog Page Section
+   ================================ */
+.blog-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0a0a23, #1e1e40);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.blog-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.blog-container h1 {
+  font-size: 2.8rem;
+  color: #00e5ff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.blog-container .blog-intro {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+/* Blog Cards */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.blog-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.blog-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.blog-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Read More Button */
+.blog-card .read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blog-card .read-more:hover {
+  background: linear-gradient(135deg, #ff5722, #e91e63);
+  transform: scale(1.05);
+}
+
+/* ================================
+   Add Blog Form
+   ================================ */
+.add-blog {
+  margin: 50px auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.add-blog h2 {
+  color: #00e5ff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.add-blog input,
+.add-blog textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.add-blog input::placeholder,
+.add-blog textarea::placeholder {
+  color: #aaa;
+}
+
+.add-blog button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-blog button:hover {
+  background: linear-gradient(135deg, #ff5722, #e91e63);
+  transform: scale(1.05);
+}
+
+/* ================================
+   Blog List Section
+   ================================ */
+.blog-list {
+  margin: 50px auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.blog-list h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.blog-list ul {
+  list-style: none;
+}
+
+.blog-list li {
+  padding: 15px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: #eee;
+  font-size: 1rem;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.blog-list li:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.blog-list li strong {
+  color: #00e5ff;
+  font-size: 1.1rem;
+}
